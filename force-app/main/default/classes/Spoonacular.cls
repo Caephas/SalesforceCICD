@@ -45,7 +45,6 @@ public with sharing class Spoonacular {
         if (response.getStatusCode() == 200) {
             return response.getBody();
         }
-    
         return '';
     }
 }
