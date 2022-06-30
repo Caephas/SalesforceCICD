@@ -4,8 +4,9 @@ public class CreateDataTest {
     @isTest
     public static void testData(){
         Test.startTest();
-        CreateData.createPackageData();
-        // System.assert(false, 'asdfghjkl;/');
+        // CreateData.createPackageData();
+        System.debug('o');
+        System.assert(false, 'asdfghjkl;/');
         Test.stopTest();
     }
 }
