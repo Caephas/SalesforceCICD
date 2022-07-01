@@ -32,20 +32,20 @@ public with sharing class Spoonacular {
         }
         return '';
     }
-  //  @AuraEnabled
-    // public static String getRecipeByIngredients(String ingredients){
-    //     Http http = new Http();
-    //     HttpRequest request = new HttpRequest();
-    //     request.setEndpoint(SPOONACULAR_API+'/recipes/findByIngredients?ingredients='+ingredients+'&number=10&apiKey='+API_KEY);
-    //     request.setMethod('GET');
+    @AuraEnabled
+    public static String getRecipeByIngredients(String ingredients){
+        Http http = new Http();
+        HttpRequest request = new HttpRequest();
+        request.setEndpoint(SPOONACULAR_API+'/recipes/findByIngredients?ingredients='+ingredients+'&number=10&apiKey='+API_KEY);
+        request.setMethod('GET');
         
-    //     HttpResponse response = http.send(request);
-    //     // If the request is successful, parse the JSON response.
-    //     if (response.getStatusCode() == 200) {
-    //         return response.getBody();
-    //     }
-    //     return '';
-    // }
+        HttpResponse response = http.send(request);
+        // If the request is successful, parse the JSON response.
+        if (response.getStatusCode() == 200) {
+            return response.getBody();
+        }
+        return '';
+    }
 }
 
 

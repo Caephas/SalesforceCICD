@@ -43,16 +43,16 @@ private class SpoonacularTest{
         Spoonacular.getRecipe(null);
         Test.stopTest();
     }
-    //@isTest
-    // private static void getRecipeByIngredients_TGN_TEST(){
-    //     Test.startTest();
-    //     Spoonacular_HCM_TGN_TEST httpMock;
-    //     httpMock=new Spoonacular_HCM_TGN_TEST(200,'Complete','{}',null);
-    //     Test.setMock(HttpCalloutMock.class,httpMock);
-    //     Spoonacular.getRecipeByIngredients('a');
-    //     Spoonacular.getRecipeByIngredients(null);
-    //     Test.stopTest();
-    // }
+    @isTest
+    private static void getRecipeByIngredients_TGN_TEST(){
+        Test.startTest();
+        Spoonacular_HCM_TGN_TEST httpMock;
+        httpMock=new Spoonacular_HCM_TGN_TEST(200,'Complete','{}',null);
+        Test.setMock(HttpCalloutMock.class,httpMock);
+        Spoonacular.getRecipeByIngredients('a');
+        Spoonacular.getRecipeByIngredients(null);
+        Test.stopTest();
+    }
     @isTest
     private static void Spoonacular_TGN_TEST(){
         Spoonacular obj = new Spoonacular();
