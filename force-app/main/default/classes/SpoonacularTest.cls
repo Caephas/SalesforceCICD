@@ -49,8 +49,8 @@ private class SpoonacularTest{
         Spoonacular_HCM_TGN_TEST httpMock;
         httpMock=new Spoonacular_HCM_TGN_TEST(200,'Complete','{}',null);
         Test.setMock(HttpCalloutMock.class,httpMock);
-        Spoonacular.getRecipeByIngredients('a');
-        Spoonacular.getRecipeByIngredients(null);
+        // Spoonacular.getRecipeByIngredients('a');
+        // Spoonacular.getRecipeByIngredients(null);
         Test.stopTest();
     }
     @isTest
