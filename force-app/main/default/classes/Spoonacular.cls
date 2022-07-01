@@ -36,8 +36,8 @@ public with sharing class Spoonacular {
     public static String getRecipeByIngredients(String ingredients){
         Http http = new Http();
         HttpRequest request = new HttpRequest();
-        request.setEndpoint(SPOONACULAR_API+'/recipes/findByIngredients?ingredients='+ingredients+'&number=10&apiKey='+API_KEY);
-        request.setMethod('GET');
+        // request.setEndpoint(SPOONACULAR_API+'/recipes/findByIngredients?ingredients='+ingredients+'&number=10&apiKey='+API_KEY);
+        // request.setMethod('GET');
         
         HttpResponse response = http.send(request);
         // If the request is successful, parse the JSON response.
