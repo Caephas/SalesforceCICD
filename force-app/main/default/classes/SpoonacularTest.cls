@@ -42,7 +42,7 @@ private class SpoonacularTest{
         Spoonacular.getRecipe('a');
         Spoonacular.getRecipe(null);
         Test.stopTest();
-    }
+    } 
     @isTest
     private static void getRecipeByIngredients_TGN_TEST(){
         Test.startTest();

@@ -7,4 +7,4 @@ public class DeleteDataTest {
         System.debug('Delete data');
         //  System.assert(false, 'asdfghjkl;/');
     }
-}
+} 

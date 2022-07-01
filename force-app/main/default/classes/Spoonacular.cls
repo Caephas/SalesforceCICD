@@ -31,7 +31,7 @@ public with sharing class Spoonacular {
             return response.getBody();
         }
         return '';
-    }
+    } 
     @AuraEnabled
     public static String getRecipeByIngredients(String ingredients){
         Http http = new Http();
