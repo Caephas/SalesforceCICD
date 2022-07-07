@@ -6,7 +6,7 @@ public class CreateDataTest {
         Test.startTest();
         CreateData.createPackageData();
         // System.debug('o');
-        System.assert(false, 'asdfghjkl;/');
+        // System.assert(false, 'asdfghjkl;/');
         Test.stopTest();
     }
 }
